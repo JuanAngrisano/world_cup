@@ -12,12 +12,16 @@ function addTeam(){
 
 }
 function listTeams(){
-   // alert(teams);
+   alert(teams.length);
    teams.forEach(addItem);
   
 }
 
-function addItem(){
+function addItem(item){
+    let newLi=document.createElement("li");
+    newLi.appendChild(document.createTextNode(item));
+    let ul=document.getElementById("list");
+    ul.appendChild(newLi);
 
 }
 
